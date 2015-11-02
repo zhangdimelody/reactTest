@@ -1,0 +1,16 @@
+{
+  "name": "react",
+  "version": "1.0.0",
+  "description": "react demo",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "grunt "
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies":{
+  	"grunt": "",
+    "grunt-react":"",
+  	"grunt-contrib-watch":""
+  }
+}
