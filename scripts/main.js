@@ -8,8 +8,11 @@ requirejs.config({
 	}
 });
 
-
-// require(["js/main-content"]);
-require(["js/search-list"]);
-
-
+// 自己写的略low的路由
+var hash = window.location.hash;
+hash = hash.substr(1);
+require(["js/"+ hash +"-view"]);
+// 监听的并没有什么卵用
+window.addEventListener("hashchange",function(hash){
+	console.log(hash)
+});
