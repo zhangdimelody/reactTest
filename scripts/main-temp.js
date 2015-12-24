@@ -11,10 +11,14 @@ requirejs.config({
 });
 
 
-require(['js/route']);
+// require(['js/route']);
 
 
 
+var hash = location.hash.split("?")[0].split("#")[1];
+define(["$","js/"+ hash +"/index-view"],function($,ContentView){
+	$("body").html(ContentView);
+})
 
 
 
@@ -30,5 +34,4 @@ require(['js/route']);
 // 	$("#content_wrap").innerHTML = "";
 // 	renderToContent();
 // });
-
 // renderToContent();

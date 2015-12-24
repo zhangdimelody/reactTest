@@ -1,0 +1,11 @@
+body{
+	font-family: "微软雅黑";
+}
+a, a:hover, a:visited{
+	color: #2390CA;
+	text-decoration: none;
+}
+.login_wrap{
+	width: 100%;
+	text-align: center;
+}

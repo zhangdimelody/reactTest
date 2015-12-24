@@ -1,0 +1,24 @@
+{
+  "name": "reactMelody",
+  "version": "0.0.0",
+  "homepage": "https://github.com/zhangdimelody/reactMelody",
+  "authors": [
+    "zd"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "react-dom": "~0.1.0",
+    "react-router": "~0.13.5",
+    "requirejs-react-jsx": "~0.15.0",
+    "requirejs": "~2.1.22"
+  }
+}

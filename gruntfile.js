@@ -18,9 +18,22 @@ module.exports = function(grunt){
 				dest: 'scripts/js/',
 				ext: '.js'
 			}
+		},
+		connect:{
+			server:{
+				options:{
+					hostname: 'localhost',
+					port: 8008,
+					base: '.',
+					open: "http://localhost:8008"
+				}
+			}
 		}
 	});
 	grunt.registerTask('default',['react','watch']);
+	grunt.registerTask('server',['connect','watch']);
+
 	grunt.loadNpmTasks('grunt-react');	
 	grunt.loadNpmTasks('grunt-contrib-watch');	
+	grunt.loadNpmTasks('grunt-contrib-connect');	
 }
