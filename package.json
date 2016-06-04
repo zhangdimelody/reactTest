@@ -8,9 +8,13 @@
   },
   "author": "",
   "license": "ISC",
-  "devDependencies":{
-  	"grunt": "",
-    "grunt-react":"",
-  	"grunt-contrib-watch":""
+  "devDependencies": {
+    "grunt": "",
+    "grunt-contrib-watch": "",
+    "grunt-react": "",
+    "load-grunt-tasks": "^3.4.0",
+    "react": "^0.14.6",
+    "react-redux": "^4.0.6",
+    "redux": "^3.0.5"
   }
 }

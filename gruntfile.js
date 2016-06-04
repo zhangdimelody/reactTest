@@ -28,11 +28,30 @@ module.exports = function(grunt){
 					open: "http://localhost:8008"
 				}
 			}
+		},
+		babel:{
+			options:{
+				sourceMap: true,
+				presets:['babel-preset-es2015']
+			},
+	        dist: {
+	            files: {
+	                'scripts/js/': ['scripts/jsx/*.babel','scripts/jsx/*/*.babel']
+	            }
+	        }
+			// ,files:{
+			// 	expand: true,
+			// 	cwd: 'scripts/jsx/',
+			// 	src: ['*.babel','*/*.babel'],
+			// 	dest: 'scripts/js',
+			// 	ext: '.js'
+			// }
 		}
 	});
-	grunt.registerTask('default',['react','watch']);
-	grunt.registerTask('server',['connect','watch']);
+	grunt.registerTask('default',['connect','react','watch']);
+	// grunt.registerTask('server',['connect','watch']);
 
+	grunt.loadNpmTasks('load-grunt-tasks');	
 	grunt.loadNpmTasks('grunt-react');	
 	grunt.loadNpmTasks('grunt-contrib-watch');	
 	grunt.loadNpmTasks('grunt-contrib-connect');	
