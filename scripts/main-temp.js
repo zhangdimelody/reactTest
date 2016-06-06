@@ -22,7 +22,6 @@ define(["$","js/"+ hash +"/index-view"],function($,ContentView){
 
 
 
-
 // 自己写的略low的路由
 // function renderToContent() {
 // 	var hash = window.location.hash;
