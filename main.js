@@ -13,18 +13,3 @@ requirejs.config({
 
 require(['scripts/js/b-route']);
 
-
-
-// 自己写的略low的路由
-// function renderToContent() {
-// 	var hash = window.location.hash;
-// 	hash = hash.substr(1);
-// 	if(hash == "") hash = "main";
-// 	require(["js/" + hash + "-view"]);
-// }
-
-// window.addEventListener("hashchange", function(obj) {
-// 	$("#content_wrap").innerHTML = "";
-// 	renderToContent();
-// });
-// renderToContent();
